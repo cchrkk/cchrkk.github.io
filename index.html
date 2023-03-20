@@ -1,60 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" rel="stylesheet">
-    <style type="text/css">
-        body {
-            font-family: 'Open Sans', sans-serif;
-            background-image: url(https://wallpaperaccess.com/full/2641074.gif);
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="shortcut icon"
+      href="https://avatars0.githubusercontent.com/u/12370126"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#C3C1C1" />
+    <meta name="description" content="chrk. links" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <title>chrk.</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+      body {
+        background-color: #000000;
+      }
+
+      h5 {
+        color: #C3C1C1;
+      }
+
+      .name {
+        color: #C3C1C1;
+      }
+
+      .love {
+        color: #FF0000 !important;
+      }
+
+      /*----------------- Mail-------------------- */
+      #email {
+        text-decoration: none;
+        float: right;
+        color: #C3C1C1;
+      }
+
+      .footer {
+        margin-top: 5% !important;
+        margin-bottom: 10px;
+      }
+
+      img {
+        border-radius: 50%;
+        max-width: 150px;
+        align: center;
+      }
+
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-top: 35% !important;
+      }
+
+      .atari {
+        font-family: 'press start 2p';
+        font-size: 350%;
+        text-align: center;
+        color: rgba(white, .9);
+        text-shadow: 0 .1em 0 #000;
+      }
+
+      @media (max-width: 479px) {
+        .footer {
+          margin-top: 35% !important;
         }
+      }
+
+      .bg {
+        animation: slide 3s ease-in-out infinite alternate;
+        background-image: linear-gradient(-45deg, #010201 50%, #262626 50%);
+        bottom: 0;
+        left: -50%;
+        opacity: .5;
+        position: fixed;
+        right: -50%;
+        top: 0;
+        z-index: -1;
+      }
+
+      .bg2 {
+        animation-direction: alternate-reverse;
+        animation-duration: 4s;
+      }
+
+      .bg3 {
+        animation-duration: 5s;
+      }
+
+      .content {
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: .25em;
+        box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
+        box-sizing: border-box;
+        left: 50%;
+        padding: 10vmin;
+        position: fixed;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      h1 {
+        font-family: monospace;
+      }
+
+      @keyframes slide {
+        0% {
+          transform: translateX(-25%);
+        }
+
+        100% {
+          transform: translateX(25%);
+        }
+      }
     </style>
-
-
-    <!-- ((1)) - Put your brand name or whatever you want -->
-    <title>@_xsun | Linktree</title>
-</head>
-<body>
-
-<div class="container">
-    <div class="row justify-content-center mt-4">
-        <!-- ((2)) - Put your image / icon here -->
-        <img alt="cherokee" class="rounded-circle img-thumbnail border border-info" src="" style="height:96px; width:96px;">
+  </head>
+  <body>
+    <div class="container">
+      <div class="container">
+        <img
+          class="center"
+          src="https://avatars0.githubusercontent.com/u/12370126"
+          alt="Avatar"
+        />
+      </div>
+      <div class="container">
+        <p class="atari text-light">cherokee.</p>
+      </div>
+      <div class="mt-4">
+        <a
+          href="https://steamcommunity.com/id/alexsk8/"
+          class="btn btn-outline-light btn-block"
+          role="button"
+          target="_blank"
+        >
+          <i class="fab fa-steam">&nbsp;</i>@alexsk8
+        </a>
+        <br />
+        <a
+          href="https://instagram.com/_xsun"
+          class="btn btn-outline-light btn-block"
+          role="button"
+          target="_blank"
+        >
+          <i class="fab fa-instagram">&nbsp;</i>@_xsun
+        </a>
+        <br />
+        <a
+          href="https://twitter.com/cchrkk"
+          class="btn btn-outline-light btn-block"
+          role="button"
+          target="_blank"
+        >
+          <i class="fab fa-twitter">&nbsp;</i>@cchrkk
+        </a>
+        <br />
+        <a
+          href="https://www.youtube.com/channel/UC6J3YgNuhigJaGhszNNoKTQ"
+          class="btn btn-outline-light btn-block"
+          role="button"
+          target="_blank"
+        >
+          <i class="fab fa-youtube">&nbsp;</i>@cherokee.
+        </a>
+        <br />
+        <a
+          href="https://open.spotify.com/user/1170935246"
+          class="btn btn-outline-light btn-block"
+          role="button"
+          target="_blank"
+        >
+          <i class="fab fa-spotify">&nbsp;</i>@chrk.
+        </a>
+      </div>
+      <div class="footer mt-5">
+        <hr />
+        <h6 class="text-light">
+          Made With <span class="love">♥</span> in Italy 🇮🇹
+        </h6>
+        <a id="email" href="mailto:cchrkk@proton.me">
+          <i class="fa fa-envelope"></i>
+        </a>
+      </div>
     </div>
-    <div class="row justify-content-center mt-3 mb-3">
-        <!-- ((3)) - Put your brand name or whatever you want -->
-        <h3 style="color:#324D5C;">chrk.</h3>
-    </div>
-    <div class="row justify-content-center mx-2">
-        <!-- ((4)) - Buttons blocks - you can add as many as you want -->
-        <a href="https://chrk.tk" class="btn btn-outline-info btn-lg btn-block">My Blog</a>
-    </div>
-
-    <div class="row justify-content-center mt-4">
-        <ul class="list-unstyled">
-            <!-- ((5)) - Social icon blocks - you can add as many as you want -->
-            <li class="list-inline-item "><a  href="https://twitter.com" rel="nofollow noopener" target="_blank"><i class="fab fa-twitter text-secondary"></i></a></li>
-            <li class="list-inline-item"><a  href="https://www.facebook.com" rel="nofollow noopener" target="_blank"><i class="fab fa-facebook text-secondary"></i></a></li>
-            <li class="list-inline-item"><a  href="https://www.youtube.com" rel="nofollow noopener" target="_blank"><i class="fab fa-youtube text-secondary"></i></a></li>
-            <li class="list-inline-item"><a  href="https://www.strava.com" rel="nofollow noopener" target="_blank"><i class="fab fa-strava text-secondary"></i></a></li>
-            <li class="list-inline-item"><a  href="https://www.instagram.com/_xsun" rel="nofollow noopener" target="_blank"><i class="fab fa-instagram text-secondary"></i></a></li>
-            <li class="list-inline-item"><a  href="https://www.pinterest.com" rel="nofollow noopener" target="_blank"><i class="fab fa-pinterest text-secondary"></i></a></li>
-        </ul>
-    </div>
-
-
-</div>
-
-
-<!-- Bootstrap core JavaScript -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
-<!-- YOU CAN ADD SCRIPTS AND STUFF DOWN BELOW HERE-->
-
-</body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+  </body>
 </html>
