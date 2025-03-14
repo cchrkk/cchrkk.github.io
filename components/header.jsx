@@ -97,6 +97,7 @@ function Header() {
           { text: "ᒪᗩᔕᖶ.ᖴᗰ", url: "https://www.last.fm/user/cchrkk" },
           { text: "steam", url: "https://steamcommunity.com/id/alexsk8" },
           { text: "ƓᏫƓ", url: "https://www.gog.com/u/ccherokee" },
+          { text: "t͓̽w͓̽i͓̽t͓̽c͓̽h͓̽2", url: "https://www.twitch.tv/ccherokee" },
           { text: "t͓̽w͓̽i͓̽t͓̽c͓̽h͓̽", url: "https://www.twitch.tv/ccherokee" }
         ].map(social => (
           <a 
