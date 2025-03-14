@@ -95,9 +95,6 @@ function Header() {
           { text: "ꜱᴘᴏᴛɪꜰʏ", url: "https://open.spotify.com/user/1170935246" },
           { text: "x.ƈσɱ", url: "https://twitter.com/cchrkk" },
           { text: "ᒪᗩᔕᖶ.ᖴᗰ", url: "https://www.last.fm/user/cchrkk" },
-          { text: "steam", url: "https://steamcommunity.com/id/alexsk8" },
-          { text: "ƓᏫƓ", url: "https://www.gog.com/u/ccherokee" },
-          { text: "t͓̽w͓̽i͓̽t͓̽c͓̽h͓̽2", url: "https://www.twitch.tv/ccherokee" },
           { text: "t͓̽w͓̽i͓̽t͓̽c͓̽h͓̽", url: "https://www.twitch.tv/ccherokee" }
         ].map(social => (
           <a 
@@ -114,15 +111,11 @@ function Header() {
 
       <div className="flex flex-wrap justify-center gap-4 px-4">
         {[
-          { text: "ｙｏｕｔｕｂｅ", url: "https://www.youtube.com/channel/UC6J3YgNuhigJaGhszNNoKTQ" },
-          { text: "𝖎𝖓𝖘𝖙𝖆𝖌𝖗𝖆𝖒", url: "https://instagram.com/_xsun" },
-          { text: "ꜱᴘᴏᴛɪꜰʏ", url: "https://open.spotify.com/user/1170935246" },
-          { text: "x.ƈσɱ", url: "https://twitter.com/cchrkk" },
-          { text: "ᒪᗩᔕᖶ.ᖴᗰ", url: "https://www.last.fm/user/cchrkk" },
+          { text: "𝙗𝙡𝙪𝙚𝙨𝙠𝙮", url: "https://bsky.app/profile/chrk.tk" },
           { text: "steam", url: "https://steamcommunity.com/id/alexsk8" },
           { text: "ƓᏫƓ", url: "https://www.gog.com/u/ccherokee" },
           { text: "t͓̽w͓̽i͓̽t͓̽c͓̽h͓̽2", url: "https://www.twitch.tv/ccherokee" },
-          { text: "t͓̽w͓̽i͓̽t͓̽c͓̽h͓̽", url: "https://www.twitch.tv/ccherokee" }
+          { text: "₴ØɄ₦Đ₵ⱠØɄĐ", url: "https://soundcloud.com/cccherokeee" }
         ].map(social => (
           <a 
             key={social.url}
