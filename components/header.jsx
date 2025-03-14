@@ -110,7 +110,7 @@ function Header() {
 
       <div className="flex flex-wrap justify-center gap-4 px-4">
         {[
-          { text: "t͓̽w͓̽i͓̽t͓̽c͓̽h͓̽", url: "https://www.twitch.tv/ccherokee" }
+          { text: "t͓̽w͓̽i͓̽t͓̽c͓̽h͓̽", url: "https://www.twitch.tv/ccherokee" },
           { text: "𝙗𝙡𝙪𝙚𝙨𝙠𝙮", url: "https://bsky.app/profile/chrk.tk" },
           { text: "steam", url: "https://steamcommunity.com/id/alexsk8" },
           { text: "ƓᏫƓ", url: "https://www.gog.com/u/ccherokee" },
