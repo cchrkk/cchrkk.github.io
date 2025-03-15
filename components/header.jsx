@@ -25,19 +25,19 @@ function Header() {
     window.addEventListener('mousemove', handleMouseMove);
     
     const glitchInterval = setInterval(() => {
-      if (Math.random() > 0.7) { 
+      if (Math.random() > 0.6) { 
         setGlitchState({
-          textShadow1: `${(Math.random() * 0.1).toFixed(3)}em ${(Math.random() * 0.1 - 0.05).toFixed(3)}em 0 rgba(255,0,255,.75)`,
-          textShadow2: `${(Math.random() * 0.1 - 0.05).toFixed(3)}em ${(Math.random() * 0.1 - 0.05).toFixed(3)}em 0 rgba(0,255,255,.75)`,
-          textShadow3: `${(Math.random() * 0.1 - 0.05).toFixed(3)}em ${(Math.random() * 0.1 - 0.05).toFixed(3)}em 0 rgba(255,255,255,.75)`,
-          skew: `${Math.random() * 10 - 5}deg`,
-          transform1: `${(Math.random() * 0.05 - 0.025).toFixed(3)}em`,
-          transform2: `${(Math.random() * 0.05 - 0.025).toFixed(3)}em`,
-          transform3: `${(Math.random() * 0.05 - 0.025).toFixed(3)}em`,
-          transform4: `${(Math.random() * 0.05 - 0.025).toFixed(3)}em`,
+          textShadow1: `${(Math.random() * 0.2).toFixed(3)}em ${(Math.random() * 0.2 - 0.1).toFixed(3)}em 0 rgba(255,0,255,.85)`,
+          textShadow2: `${(Math.random() * 0.2 - 0.1).toFixed(3)}em ${(Math.random() * 0.2 - 0.1).toFixed(3)}em 0 rgba(0,255,255,.85)`,
+          textShadow3: `${(Math.random() * 0.2 - 0.1).toFixed(3)}em ${(Math.random() * 0.2 - 0.1).toFixed(3)}em 0 rgba(255,255,255,.85)`,
+          skew: `${Math.random() * 20 - 10}deg`,
+          transform1: `${(Math.random() * 0.1 - 0.05).toFixed(3)}em`,
+          transform2: `${(Math.random() * 0.1 - 0.05).toFixed(3)}em`,
+          transform3: `${(Math.random() * 0.1 - 0.05).toFixed(3)}em`,
+          transform4: `${(Math.random() * 0.1 - 0.05).toFixed(3)}em`,
         });
       }
-    }, Math.random() * 300 + 100); 
+    }, Math.random() * 200 + 50); 
     
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
@@ -45,53 +45,59 @@ function Header() {
     };
   }, []);
 
-  const moveX = mousePosition.x * 20;
-  const moveY = mousePosition.y * 20;
-  const rotate = mousePosition.x * 5;
-
-  const glitchStyle = {
-    textShadow: `
-      ${glitchState.textShadow1},
-      ${glitchState.textShadow2},
-      ${glitchState.textShadow3}
-    `,
-    transform: `skew(${glitchState.skew})`,
-  };
-
-  const glitchBeforeStyle = {
-    clipPath: 'polygon(0 0, 100% 0, 100% 45%, 0 45%)',
-    transform: `translate(${glitchState.transform1}, ${glitchState.transform2})`,
-    opacity: 0.75,
-    textShadow: glitchStyle.textShadow,
-  };
-
-  const glitchAfterStyle = {
-    clipPath: 'polygon(0 80%, 100% 20%, 100% 100%, 0 100%)',
-    transform: `translate(${glitchState.transform3}, ${glitchState.transform4})`,
-    opacity: 0.75,
-    textShadow: glitchStyle.textShadow,
-  };
+  const moveX = mousePosition.x * 30;
+  const moveY = mousePosition.y * 30;
+  const rotate = mousePosition.x * 8;
 
   return (
     <div className="h-screen flex flex-col items-center justify-center space-y-12">
-      <h1 
-        className="text-8xl md:text-9xl font-black tracking-tighter relative glitch"
+      <div 
+        className="logo-container relative"
         style={{
           transform: `translate(${moveX}px, ${moveY}px) rotate(${rotate}deg)`,
           transition: 'transform 0.2s ease-out',
-          ...glitchStyle
         }}
-        data-text="CHRK."
       >
-        <span style={glitchBeforeStyle} className="absolute top-0 left-0 w-full h-full">CHRK.</span>
-        CHRK.
-        <span style={glitchAfterStyle} className="absolute top-0 left-0 w-full h-full">CHRK.</span>
-      </h1>
+        <img 
+          src="/output-onlinepngtools.png" 
+          alt="CHRK Logo" 
+          className="logo-image relative z-10"
+          style={{
+            maxWidth: '350px',
+            filter: `drop-shadow(${glitchState.textShadow1}) drop-shadow(${glitchState.textShadow2}) drop-shadow(${glitchState.textShadow3})`,
+            transform: `skew(${glitchState.skew})`,
+          }}
+        />
+        <img 
+          src="/output-onlinepngtools.png" 
+          alt="" 
+          className="absolute top-0 left-0 z-20"
+          style={{
+            maxWidth: '350px',
+            clipPath: 'polygon(0 0, 100% 0, 100% 45%, 0 45%)',
+            transform: `translate(${glitchState.transform1}, ${glitchState.transform2})`,
+            opacity: 0.75,
+            filter: `drop-shadow(${glitchState.textShadow1}) drop-shadow(${glitchState.textShadow2}) drop-shadow(${glitchState.textShadow3})`,
+          }}
+        />
+        <img 
+          src="/output-onlinepngtools.png" 
+          alt="" 
+          className="absolute top-0 left-0 z-0"
+          style={{
+            maxWidth: '350px',
+            clipPath: 'polygon(0 80%, 100% 20%, 100% 100%, 0 100%)',
+            transform: `translate(${glitchState.transform3}, ${glitchState.transform4})`,
+            opacity: 0.75,
+            filter: `drop-shadow(${glitchState.textShadow1}) drop-shadow(${glitchState.textShadow2}) drop-shadow(${glitchState.textShadow3})`,
+          }}
+        />
+      </div>
 
       <div className="flex flex-wrap justify-center gap-4 px-4">
         {[
           { text: "ｙｏｕｔｕｂｅ", url: "https://www.youtube.com/channel/UC6J3YgNuhigJaGhszNNoKTQ" },
-          { text: "𝖎𝖓𝖘𝖙𝖆𝖌𝖗𝖆𝖒", url: "https://instagram.com/_xsun" },
+          { text: "𝖎𝖔𝖆𝖙𝖆𝖌𝖗𝖆𝖒", url: "https://instagram.com/_xsun" },
           { text: "ꜱᴘᴏᴛɪꜰʏ", url: "https://open.spotify.com/user/1170935246" },
           { text: "x.ƈσɱ", url: "https://twitter.com/cchrkk" },
           { text: "ᒪᗩᔕᖶ.ᖴᗰ", url: "https://www.last.fm/user/cchrkk" }
