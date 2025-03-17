@@ -1,4 +1,4 @@
-# ¢hrk. Bio Page
+# chrk Bio Page
 This is a personal bio page built with modern web technologies.
 ## Dependencies
 
