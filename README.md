@@ -3,7 +3,7 @@ This is a personal bio page built with modern web technologies.
 
 ## Demo
 
-![Demo](demo.png)
+![Demo](demo.gif)
 
 Demo available at https://bio.chrk.tk
 
