@@ -1,5 +1,12 @@
 # chrk Bio Page
 This is a personal bio page built with modern web technologies.
+
+## Demo
+
+![Demo](demo.png)
+
+Demo available at https://bio.chrk.tk
+
 ## Dependencies
 
 - **React**: A JavaScript library for building user interfaces.
@@ -7,7 +14,7 @@ This is a personal bio page built with modern web technologies.
 - **Babel**: A JavaScript compiler that allows you to use next-generation JavaScript.
 - **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
 - **Google Fonts**: Used for the "Inter" font.
-## Demo
-Demo available at https://bio.chrk.tk
-# License
+
+## License
+
 This project is licensed under the MIT License. Feel free to fork and modify it as you like.
