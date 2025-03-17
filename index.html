@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -5,35 +6,21 @@
   <title>chrk.</title>
   <link rel="icon" href="favicon.png" type="image/png">
 
-  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Usa React e ReactDOM in produzione -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+  <!-- Rimuovi Babel in produzione -->
+  <!-- <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> -->
+
+  <!-- Usa Tailwind CSS come plugin PostCSS o CLI -->
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link href="styles.css" rel="stylesheet">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-  
-
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#3b82f6',
-            amoled: {
-              black: '#000000',
-              accent: '#FFFFFF',
-              dim: '#333333'
-            }
-          },
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-          },
-        }
-      }
-    }
-  </script>
   <style>
     body {
       background-color: black;
@@ -167,8 +154,8 @@
   <canvas id="particles-network"></canvas>
   <div id="root"></div>
   
-  <script type="text/babel" data-type="module" src="components/header.jsx"></script>
-  <script type="text/babel" data-type="module" src="app.jsx"></script>
+  <script type="module" src="components/header.js"></script>
+  <script type="module" src="app.js"></script>
   <script src="particles.js"></script>
 </body>
 </html>
