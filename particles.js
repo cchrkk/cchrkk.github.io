@@ -7,7 +7,7 @@
   let width = canvas.width = window.innerWidth;
   let height = canvas.height = window.innerHeight;
   
-  const particleCount = 100;
+  const particleCount = 110;
   const particles = [];
   const maxDistance = 150;
   const colors = ['rgba(255,0,255,0.3)', 'rgba(0,255,255,0.3)', 'rgba(255,255,255,0.3)'];
