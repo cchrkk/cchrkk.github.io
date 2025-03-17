@@ -3,21 +3,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>¢hrk.</title>
+  <link rel="icon" href="favicon.png" type="image/png">
   
-  <!-- React 18 Dependencies -->
   <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-  <!-- Inter Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Custom Tailwind Config -->
   <script>
     tailwind.config = {
       theme: {
@@ -43,7 +40,6 @@
       color: white;
     }
 
-    /* Particle network canvas styling */
     #particles-network {
       position: fixed;
       top: 0;
@@ -150,14 +146,12 @@
       }
     }
 
-    /* Remove old social-btn styles */
     .social-btn,
     .social-btn::before,
     .social-btn svg {
       display: none;
     }
 
-    /* Remove background canvas styling */
     #canvas {
       display: none;
     }
@@ -173,13 +167,8 @@
   <canvas id="particles-network"></canvas>
   <div id="root"></div>
   
-  <!-- Components - Changed order and added type="module" -->
   <script type="text/babel" data-type="module" src="components/header.jsx"></script>
-  
-  <!-- Main App - Changed to load after components -->
   <script type="text/babel" data-type="module" src="app.jsx"></script>
-  
-  <!-- Particle Network -->
   <script src="particles.js"></script>
 </body>
 </html>
