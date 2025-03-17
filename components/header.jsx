@@ -59,7 +59,7 @@ function Header() {
         }}
       >
         <img 
-          src="/output-onlinepngtools.png" 
+          src="/logo.png" 
           alt="CHRK Logo" 
           className="logo-image relative z-10"
           style={{
@@ -69,7 +69,7 @@ function Header() {
           }}
         />
         <img 
-          src="/output-onlinepngtools.png" 
+          src="/logo.png" 
           alt="" 
           className="absolute top-0 left-0 z-20"
           style={{
@@ -81,7 +81,7 @@ function Header() {
           }}
         />
         <img 
-          src="/output-onlinepngtools.png" 
+          src="/logo.png" 
           alt="" 
           className="absolute top-0 left-0 z-0"
           style={{
