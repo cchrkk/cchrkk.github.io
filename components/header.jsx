@@ -105,6 +105,7 @@ function Header() {
           { text: "𝙗𝙡𝙪𝙚𝙨𝙠𝙮", url: "https://bsky.app/profile/chrk.tk" },
           { text: "steam", url: "https://steamcommunity.com/id/alexsk8" },
           { text: "ƓᏫƓ", url: "https://www.gog.com/u/ccherokee" },
+          { text: "𝚐𝚒𝚝𝚑𝚞𝚋", url: "https://github.com/cchrkk" },
           { text: "₴ØɄ₦Đ₵ⱠØɄĐ", url: "https://soundcloud.com/cccherokeee" }
         ].map(social => (
           <a 
