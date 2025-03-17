@@ -94,28 +94,13 @@ function Header() {
         />
       </div>
 
-      <div className="flex flex-wrap justify-center gap-4 px-4">
+      <div className="flex flex-wrap justify-center gap-4 px-4 max-w-4xl">
         {[
           { text: "ｙｏｕｔｕｂｅ", url: "https://www.youtube.com/channel/UC6J3YgNuhigJaGhszNNoKTQ" },
           { text: "𝔦𝔫𝔰𝔱𝔞𝔤𝔯𝔞𝔪", url: "https://instagram.com/_xsun" },
           { text: "ꜱᴘᴏᴛɪꜰʏ", url: "https://open.spotify.com/user/1170935246" },
           { text: "x.ƈσɱ", url: "https://twitter.com/cchrkk" },
-          { text: "ᒪᗩᔕᖶ.ᖴᗰ", url: "https://www.last.fm/user/cchrkk" }
-        ].map(social => (
-          <a 
-            key={social.url}
-            href={social.url}
-            className="social-text"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {social.text}
-          </a>
-        ))}
-      </div>
-
-      <div className="flex flex-wrap justify-center gap-4 px-4">
-        {[
+          { text: "ᒪᗩᔕᖶ.ᖴᗰ", url: "https://www.last.fm/user/cchrkk" },
           { text: "t͓̽w͓̽i͓̽t͓̽c͓̽h͓̽", url: "https://www.twitch.tv/ccherokee" },
           { text: "𝙗𝙡𝙪𝙚𝙨𝙠𝙮", url: "https://bsky.app/profile/chrk.tk" },
           { text: "steam", url: "https://steamcommunity.com/id/alexsk8" },
