@@ -15,6 +15,10 @@ Demo available at https://bio.chrk.tk
 - **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
 - **Google Fonts**: Used for the "Inter" font.
 
+## Credits
+
+Special thanks to GitHub Copilot and Websim.ai for their valuable assistance in the development of this project.
+
 ## License
 
 This project is licensed under the MIT License. Feel free to fork and modify it as you like.
